@@ -12,11 +12,11 @@
 
 ### Fonte Principal
 
-* [Excertos de **"Introdução à Inteligência Artificial de Stuart Russel e Peter Norvig"** ](../Introdução à Inteligência Artificial de Stuart.md)
+* [Excertos de **"Introdução à Inteligência Artificial de Stuart Russel e Peter Norvig"** ](./Introdução à Inteligência Artificial de Stuart.md)
 
 ### Fontes Complementares
 
-- Teste de Turing - Stanford Encyclopedia of Philosophy -  Um contexto filosófico e histórico mais amplo sobre o teste de turing
+- [Teste de Turing - Stanford Encyclopedia of Philosophy](https://plato-stanford-edu.translate.goog/entries/turing-test/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp) -  Um contexto filosófico e histórico mais amplo sobre o teste de turing
 
 **Atividades Práticas**
 
