@@ -1,5 +1,5 @@
 # Plano de Estudo de Inteligência Artificial Avançada
-Autor: Tiago Augusto de Oliveira
+Autor: Tiago Augusto de Oliveira e Nicolas Oliveira Mariano
 
 Este repositório contém um plano de estudo guiado de 12 semanas, dividido nos paradigmas Simbólico, Conexionista e Evolucionário da IA.
 
