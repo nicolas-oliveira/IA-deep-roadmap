@@ -14,7 +14,7 @@
  [arXiv:2102.03406](https://arxiv.org/abs/2102.03406) 
  Este artigo examina os fundamentos do comportamento simbólico na IA, oferecendo uma visão geral conceitual dos sistemas de raciocínio simbólico.
 
-- **“Knowledge Representation ”** - Capítulo de *Artificial Intelligence: A Modern Approach* by Russell & Norvig 
+- **“Representação do Conhecimento”** - Capítulo 10 do livro "Inteligência Artificial: Uma abordagem moderna" 4 Edição por Russell & Norvig 
  Foco na lógica, nos sistemas baseados em regras e na estrutura do conhecimento simbólico.
 
 ### Fontes Complementares
