@@ -12,7 +12,7 @@
 
 ### Fonte Principal
 
-* [Excertos de **"Introdução à Inteligência Artificial de Stuart Russel e Peter Norvig"** ](./Introdução à Inteligência Artificial de Stuart.md)
+* [Excertos de **"Introdução à Inteligência Artificial de Stuart Russel e Peter Norvig"** ](./4ª Edição - Introdução à Inteligência Artificial Peter e Novrig/4a-edicao-introducao-a-inteligencia-artificial.md)
 
 ### Fontes Complementares
 
