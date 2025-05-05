@@ -333,10 +333,6 @@ Isso corresponde aproximadamente ao modelo padrão da IA: projetar sistemas que 
 Então, por que a IA e a teoria de controle são dois campos diferentes, apesar das conexões estreitas entre seus fundadores?   
 A resposta reside no acoplamento estrito entre as técnicas matemáticas familiares aos participantes e os conjuntos de problemas correspondentes que foram incluídos em cada visão do mundo. O cálculo e a álgebra matricial, as ferramentas da teoria de controle, eram adequados para sistemas que podem ser descritos por conjuntos fixos de variáveis contínuas, enquanto a IA foi criada em parte como um meio de escapar das limitações percebidas.   
 As ferramentas de inferência lógica e computação permitiram que os pesquisadores da IA considerassem problemas como a linguagem, a visão, o planejamento simbólico, que ficavam completamente fora do campo de ação da teoria de controle.   
-
- --- 
-
-Claro! Abaixo está o conteúdo do arquivo convertido para Markdown, formatado corretamente com negritos, listas e subtítulos, mantendo exatamente o conteúdo original, inclusive com as notas de rodapé.
 ---
 
 ### **1.2.8 Linguística**
