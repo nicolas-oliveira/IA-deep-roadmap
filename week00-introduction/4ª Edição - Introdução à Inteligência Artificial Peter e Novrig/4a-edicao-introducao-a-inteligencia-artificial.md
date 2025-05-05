@@ -23,6 +23,7 @@ Dessas duas dimensões - **humano contra racional**, **pensamento contra comport
 - Uma abordagem racionalista, por outro lado, envolve uma combinação de matemática e engenharia, que se conecta a estatística, teoria de controle e economia   
 
 Cada grupo tem ao mesmo tempo desacreditado e ajudado o outro. Vamos examinar as quatro abordagens com mais detalhes.
+
 ---
 
 ¹ Aos olhos do público, às vezes há confusão entre os termos "inteligência artificial" e "aprendizado de máquina". O **aprendizado de máquina** é um subcampo da IA que estuda a capacidade de melhorar o desempenho com base na experiência. Alguns sistemas de IA utilizam métodos de aprendizado de máquina para alcançar competência, mas outros não.   
