@@ -304,7 +304,9 @@ A IA também tem uma dívida com a área de software da ciência da computação
 - listas ligadas,   
 - gerenciamento automático de armazenamento,   
 - conceitos fundamentais de programação simbólica, funcional, declarativa e orientada a objetos.
-  ---
+
+
+---
 
 ### **1.2.7 Teoria de controle e cibernética**
 
