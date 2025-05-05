@@ -117,6 +117,7 @@ Voltando ao exemplo aparentemente não problemático do xadrez, considere o que 
 - Submeter-se ao controle humano   
 
 Em última análise, queremos agentes comprovadamente benéficos para os humanos. Voltaremos a esse assunto na seção 1.5.
+
 ---
 
 **Nota de rodapé 3**: Em um dos primeiros livros sobre o xadrez, Ruy Lopez (1561) escreveu: "Sempre coloque o tabuleiro de modo que o sol esteja contra os olhos do seu oponente."
