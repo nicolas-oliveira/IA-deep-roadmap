@@ -6,9 +6,9 @@ Neste capítulo, tentamos explicar por que consideramos a inteligência artifici
 Denominamos nossa espécie **Homo sapiens** - homem sábio - porque nossa inteligência é muito importante para nós. Durante milhares de anos, procuramos entender como pensamos e agi-mos, isto é, como nosso cérebro, um mero punhado de matéria, pode perceber, compreender, prever e manipular um mundo muito maior e mais complicado que ele próprio. O campo da inteligência artificial, ou **IA**, vai ainda mais além: ele tenta não apenas compreender, mas também construir entidades inteligentes - máquinas que conseguem computar como agir de modo eficaz e seguro em uma grande variedade de novas situações.   
 Segundo pesquisas, a IA é considerada um dos campos mais interessantes e de mais rápido crescimento, já conseguindo gerar mais de um trilhão de dólares por ano em receitas.   
 Kai-Fu Lee, especialista em IA, prevê que seu impacto será "maior do que tudo na história da humanidade".   
-. Além disso, as fronteiras intelectuais da IA estão escancaradas. Embora um
-estudante de uma ciência mais antiga, como a física, possa achar que todas as boas ideias já foram desenvolvidas por Galileu, Newton, Curie, Einstein e demais, a IA ainda tem espaço para vários Einsteins e Edisons em tempo integral.   
-Atualmente, a IA abrange uma enorme variedade de subcampos, do mais geral (apren-dizagem, raciocínio, percepção etc.) ao mais específico, como:   
+Além disso, as fronteiras intelectuais da IA estão escancaradas. Embora um estudante de uma ciência mais antiga, como a física, possa achar que todas as boas ideias já foram desenvolvidas por Galileu, Newton, Curie, Einstein e demais, a IA ainda tem espaço para vários Einsteins e Edisons em tempo integral.   
+
+Atualmente, a IA abrange uma enorme variedade de subcampos, do mais geral (aprendizagem, raciocínio, percepção etc.) ao mais específico, como:   
 
 - Jogar xadrez   
 - Demonstrar teoremas matemáticos   
