@@ -318,21 +318,21 @@ Outros exemplos de sistemas de controle retroalimentados autorreguláveis inclue
 James Clerk Maxwell (1868) iniciou a teoria matemática dos sistemas de controle.   
 A figura central no desenvolvimento pós-guerra da teoria de controle foi Norbert Wiener (1894–1964). Wiener foi um matemático brilhante que trabalhou com Bertrand Russell, entre outros, antes de se interessar por sistemas de controle biológico e mecânico e sua conexão com a cognição.   
 Como Craik (que também utilizou sistemas de controle como modelos psicológicos), Wiener e seus colegas Arturo Rosenblueth e Julian Bigelow desafiaram a ortodoxia behaviorista (Rosenblueth et al., 1943). Eles viram o comportamento consciente como o resultado de um mecanismo regulador tentando minimizar o “erro” – a diferença entre o estado atual e o estado objetivo.   
-No fim da década de 1940, Wiener, juntamente com:   
-
-- Warren McCulloch,   
-- Walter Pitts,   
-- John von Neumann,   
-
-organizou uma série de conferências que influenciou os novos modelos matemáticos e computacionais da cognição.   
+No fim da década de 1940, Wiener, juntamente com Warren McCulloch, Walter Pitts, John von Neumann, organizou uma série de conferências que influenciou os novos modelos matemáticos e computacionais da cognição.   
 O livro de Wiener, Cybernetics (Cibernética – 1948), tornou-se bestseller e despertou o público para a possibilidade de máquinas dotadas de inteligência artificial.   
+
 Enquanto isso, na Grã-Bretanha, W. Ross Ashby (Ashby, 1940) foi pioneiro em ideias semelhantes. Ashby, Alan Turing, Grey Walter e outros formaram o Ratio Club para “aqueles que tinham as ideias de Wiener antes de surgir o livro de Wiener”.   
 Design for a Brain (Projeto de um Cérebro – 1948, 1952), de Ashby, elaborava a sua ideia de que a mente poderia ser criada com a utilização de mecanismos homeostáticos contendo laços de retroalimentação para atingir comportamento adaptável estável.   
+
 A teoria de controle moderna, em especial o ramo conhecido como controle estocástico ótimo, tem como objetivo o projeto de sistemas que maximizam uma função custo sobre o tempo.   
 Isso corresponde aproximadamente ao modelo padrão da IA: projetar sistemas que se comportem de maneira ótima.   
+
 Então, por que a IA e a teoria de controle são dois campos diferentes, apesar das conexões estreitas entre seus fundadores?   
+
 A resposta reside no acoplamento estrito entre as técnicas matemáticas familiares aos participantes e os conjuntos de problemas correspondentes que foram incluídos em cada visão do mundo. O cálculo e a álgebra matricial, as ferramentas da teoria de controle, eram adequados para sistemas que podem ser descritos por conjuntos fixos de variáveis contínuas, enquanto a IA foi criada em parte como um meio de escapar das limitações percebidas.   
-As ferramentas de inferência lógica e computação permitiram que os pesquisadores da IA considerassem problemas como a linguagem, a visão, o planejamento simbólico, que ficavam completamente fora do campo de ação da teoria de controle.   
+
+As ferramentas de inferência lógica e computação permitiram que os pesquisadores da IA considerassem problemas como a linguagem, a visão, o planejamento simbólico, que ficavam completamente fora do campo de ação da teoria de controle.
+
 ---
 
 ### **1.2.8 Linguística**
