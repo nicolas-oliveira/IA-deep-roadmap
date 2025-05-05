@@ -123,6 +123,7 @@ Em última análise, queremos agentes comprovadamente benéficos para os humanos
 ---
 
 **Nota de rodapé 3**: Em um dos primeiros livros sobre o xadrez, Ruy Lopez (1561) escreveu: "Sempre coloque o tabuleiro de modo que o sol esteja contra os olhos do seu oponente."
+
 ---
 
 ## **1.2 Fundamentos da inteligência artificial**
@@ -162,6 +163,7 @@ Na obra **Érica a Nicômaco** (Livro III. 3, 1112b), Aristóteles desenvolve es
 ---
 
 **Nota de rodapé 4**: O Novum Organum é uma atualização do Organon de Aristóteles, ou instrumento de pensamento.
+
 ---
 
 > Não deliberamos sobre os fins, mas sobre os meios. Um médico não delibera sobre se deve ou não curar, nem um orador sobre se deve ou não persuadir (...). Eles dão a finalidade por estabelecida e procuram saber a maneira de alcançá-la; se lhes parece poder ser alcançada por vários meios, procuram saber o mais fácil e o mais eficaz; e se há apenas um meio para alcançá-la, procuram saber como será alcançada por esse meio e por que outro meio alcançar esse primeiro, até chegar ao primeiro principio, que é o último na ordem de descoberta, (...) e o que vem em último lugar na ordem da análise parece ser o primeiro na ordem da execução. E, se chegarmos a uma impossibilidade, abandonamos a busca; por exemplo, se precisarmos de dinheiro e não for possível consegui-lo; porém, se algo parecer possível, tentaremos realizá-lo.   
@@ -193,6 +195,7 @@ Grosso modo, o mundo é uma instância de um problema extremamente grande!
  --- 
 
 **Nota de rodapé 5**: A notação proposta por Frege para a lógica de primeira ordem - uma combinação enigmática de aspectos textuais e geométricos - nunca se tornou popular.
+
 ---
 
 ### 1.2.3 Economia
@@ -222,8 +225,8 @@ O desenvolvimento de interfaces cérebro-máquina (Lebedev e Nicolelis, 2006) pa
  --- 
 
 **Nota de rodapé 6:** Desde então, foi descoberto que o musaranho (Scandentia) e algumas espécies de pássaros têm alta proporção de cérebro em relação à massa corporal.   
-**Nota de rodapé 7: **Muitos citam Alexander Hood (1824) como possível fonte anterior.   
-**Nota de rodapé 8: **Golgi persistiu em sua convicção de que as funções do cérebro eram executadas principalmente em um meio contínuo no qual os neurônios estavam incorporados, enquanto Cajal propunha a "doutrina neuronal". Os dois compartilharam o Prêmio Nobel em 1906, mas pronunciaram discursos mutuamente antagônicos ao aceitá-lo.   
+**Nota de rodapé 7:** Muitos citam Alexander Hood (1824) como possível fonte anterior.   
+**Nota de rodapé 8:** Golgi persistiu em sua convicção de que as funções do cérebro eram executadas principalmente em um meio contínuo no qual os neurônios estavam incorporados, enquanto Cajal propunha a "doutrina neuronal". Os dois compartilharam o Prêmio Nobel em 1906, mas pronunciaram discursos mutuamente antagônicos ao aceitá-lo.   
 
  --- 
 
@@ -627,6 +630,9 @@ Este capítulo define a IA e estabelece os fundamentos culturais sobre os quais 
 - Os neurocientistas descobriram alguns fatos sobre como o cérebro trabalha e a forma como ele se assemelha e se diferencia dos computadores.   
 - Os psicólogos adotaram a ideia de que os seres humanos e os animais podem ser considerados máquinas de processamento de informações. Os linguistas mostraram que o uso da linguagem se ajusta a esse modelo.
 
+
+ --- 
+ 
 **Nota de rodapé (15)**: 15 Ainda antes disso, em 1847, Richard Thornton, editor do *Primitive* *Expounder*, havia criticado as calculadoras mecanicas: "*A mente (…) ultrapassa a si mesma e elimina a necessidade de sua própria existência, inventando máquinas com pensamento pro prio. (…) Mas quem sabe que tais máquinas, quando aperfeiçoadas, podem não pensar em um plano para remediar todos os seus próprios defeitos e então produzir ideias além do alcance da mente mor*tal!"   
 **Nota de rodapé (16)**: Midas teria se saído melhor se tivesse seguido os princípios básicos da segurança e incluído um botão "desfazer" e um botão "pausar" em seu desejo.   
 
