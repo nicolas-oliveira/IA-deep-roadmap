@@ -385,6 +385,7 @@ Apesar da previsão otimista, o seminário em Dartmouth não trouxe nenhuma gran
 > “Criamos um programa de computador capaz de pensar não numericamente e, assim, resolvemos o antigo dilema mente-corpo.” (13)   
 
 Logo após o seminário, o programa foi capaz de demonstrar a maioria dos teoremas do Capítulo 2 do livro Principia Mathematica, de Russell e Whitehead. Dizem que Russell ficou encantado quando lhe contaram que o programa havia criado uma prova de um teorema que era mais curta que a do livro. Os editores do Journal of Symbolic Logic (Revista de Lógica Simbólica) ficaram menos impressionados; eles rejeitaram um artigo escrito em parceria por Newell, Simon e pelo Logic Theorist.
+
 ---
 
 **Notas de Rodapé (11): **Atualmente, Carnegie Mellon University (CMU).   
