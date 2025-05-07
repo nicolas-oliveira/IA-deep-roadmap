@@ -23,9 +23,7 @@
  [arXiv:2501.05435](https://arxiv.org/abs/2501.05435) 
  Uma revisão abrangente que fornece contexto sobre como os sistemas simbólicos estão sendo integrados atualmente às arquiteturas neurais.
 
-- **"The History of Artificial Intelligence "** - Stanford Encyclopedia of Philosophy 
- Um contexto filosófico e histórico mais amplo para situar a IA simbólica no desenvolvimento do campo.  
-  [https://plato.stanford.edu/entries/artificial-intelligence/](https://plato.stanford.edu/entries/artificial-intelligence/)
+- **"[The History of Artificial Intelligence](https://plato.stanford.edu/entries/artificial-intelligence/)"** - Stanford Encyclopedia of Philosophy: Um contexto filosófico e histórico mais amplo para situar a IA simbólica no desenvolvimento do campo.
 
 ## Prática
 
