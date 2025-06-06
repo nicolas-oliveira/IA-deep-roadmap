@@ -216,7 +216,16 @@ Medidas quantitativas simples são fáceis de representar. Outras medidas aprese
 
 Embora as medidas não sejam números, ainda podemos compará-las usando um símbolo de ordenação como >. Por exemplo, podemos muito bem acreditar que os exercícios de Norvig são mais difíceis que os de Russell, e que uma pontuação menor em exercícios mais difíceis:
 
-e 1 ∈Exercises ∧ e 2 ∈ Exercises ∧Wrote\(Norvig, e 1 \) ∧Wrote\(Russell, e 2 \)⇒ Difficulty\( e 1 \) > Difficulty\( e 2 \). e 1 ∈Exercises ∧ e 2 ∈ Exercises ∧Difficulty\( e 1 \) >Difficulty\( e 2 \)⇒ ExpectedScore\( e 1 \) < ExpectedScore\( e 2 \).
+$$
+e_1 ∈ Exercícios ∧ e_2 ∈ Exercícios ∧ Escreveu(Norvig, e_1 ) ∧ Escreveu(Russell, e_2 ) ⇒ \\
+Dificuldade( e_1 ) > Dificuldade( e_2 )
+$$
+
+$$
+
+e_1 ∈Exercícios ∧ e_2 ∈ Exercícios ∧ Dificuldade( e_1 ) > Dificuldade( e_2 ) ⇒ \\
+ExpectedScore( e_1 ) < ExpectedScore( e_2 ).
+$$
 
 Isso é suficiente para permitir que se decida quais exercícios fazer, mesmo que nunca tenham sido utilizados valores numéricos para a dificuldade. \(No entanto, é preciso descobrir quem escreveu quais exercícios.\) Esses tipos de relações monótonas entre medidas formam a base para o campo da física qualitativa, um subcampo da IA que investiga como raciocinar sobre sistemas físicos sem mergulhar em equações detalhadas e simulações numéricas. A física qualitativa é discutida na seção de notas históricas.
 
