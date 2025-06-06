@@ -195,13 +195,22 @@ A conversão entre unidades é feita igualando múltiplos de uma unidade a outra
 Axiomas semelhantes podem ser escritos para libras e quilogramas, segundos e dias, e dólares e centavos. Medidas podem ser usadas para descrever objetos da seguinte forma:
 
 $$
-Diâmetro(BolaDeBasquete_12) = Centímetro(23,75) \\
-ListaPreço(BolaDeBasquete_12) = \$(19) \\
-Peso(GrupoDe(\{Maçã 1, Maçã 2, Maçã 3\})) = Quilos(2) \\
-d ∈ Dias ⇒ Duração(d) = Horas(24).
-$$ 
+Diâmetro(BolaDeBasquete_12) = Centímetro(23,75) 
+$$
 
-Observe que $\$(1)$ não é uma nota de dólar — é um preço. É possível ter duas notas de dólar, mas existe apenas um objeto chamado $\(1\). Observe também que, embora Polegadas\(0\) e Centímetros\(0\) se refiram ao mesmo comprimento zero, eles não são idênticos a outras medidas zero, como Segundos\(0\).
+$$
+ListaPreço(BolaDeBasquete_12) = \$(19) 
+$$
+
+$$
+Peso(GrupoDe(\{Maçã 1, Maçã 2, Maçã 3\})) = Quilos(2)
+$$
+
+$$
+d ∈ Dias ⇒ Duração(d) = Horas(24)
+$$
+
+Observe que `$(1)` não é uma nota de dólar — é um preço. É possível ter duas notas de dólar, mas existe apenas um objeto chamado `$(1)`. Observe também que, embora `Polegadas(0)` e `Centímetros(0)` se refiram ao mesmo comprimento zero, eles não são idênticos a outras medidas zero, como `Segundos(0)`.
 
 Medidas quantitativas simples são fáceis de representar. Outras medidas apresentam um problema maior, pois não possuem uma escala de valores consensual. Exercícios apresentam dificuldade, sobremesas são deliciosas e poemas são belos, mas não é possível atribuir números a essas qualidades. Pode-se, em um momento de pura contabilidade, descartar tais propriedades como inúteis para fins de raciocínio lógico; ou, pior ainda, tentar impor uma escala numérica à beleza. Isso seria um erro grave, pois é desnecessário. O aspecto mais importante das medidas não são os valores numéricos específicos, mas o fato de que as medidas podem ser ordenadas.
 
@@ -211,7 +220,7 @@ e 1 ∈Exercises ∧ e 2 ∈ Exercises ∧Wrote\(Norvig, e 1 \) ∧Wrote\(Russel
 
 Isso é suficiente para permitir que se decida quais exercícios fazer, mesmo que nunca tenham sido utilizados valores numéricos para a dificuldade. \(No entanto, é preciso descobrir quem escreveu quais exercícios.\) Esses tipos de relações monótonas entre medidas formam a base para o campo da física qualitativa, um subcampo da IA que investiga como raciocinar sobre sistemas físicos sem mergulhar em equações detalhadas e simulações numéricas. A física qualitativa é discutida na seção de notas históricas.
 
-## 10.2.3Objetos: Coisas e coisas
+## 10.2.3. Objetos: Coisas e coisas
 
 O mundo real pode ser visto como constituído por objetos primitivos \(por exemplo, partículas atômicas\) e objetos compostos construídos a partir deles. Ao raciocinar no nível de objetos grandes, como maçãs e carros, podemos superar a complexidade envolvida em lidar com um vasto número de objetos primitivos individualmente. Há, no entanto, uma parcela significativa da realidade que parece desafiar qualquer individuação óbvia — divisão em objetos distintos. Damos a essa parcela o nome genérico de Individuação coisas. Por exemplo, suponha que eu tenha um pouco de manteiga e um porco-formigueiro à minha frente. Posso dizer Coisas que há um porco-formigueiro, mas não há um número óbvio de "objetos-manteiga", porque qualquer parte de um objeto-manteiga também é um objeto-manteiga, pelo menos até chegarmos a partes muito pequenas. Esta é a principal distinção entre coisas e coisas. Se cortarmos um porco-formigueiro ao meio, não obteremos dois porcos-formis \(infelizmente\).
 
@@ -229,7 +238,7 @@ Poderíamos continuar dizendo que a manteiga é amarela, menos densa que a água
 
 O que realmente acontece é o seguinte: algumas propriedades são intrínsecas: pertencem à própria substância do objeto, e não ao objeto como um todo. Quando você corta uma instância de stuffing ao meio, os dois pedaços retêm as propriedades intrínsecas — coisas como densidade, ponto de ebulição, sabor, cor, propriedade e assim por diante. Por outro lado, suas propriedades extrínsecas — peso, comprimento, forma e assim por diante — não são mantidas sob subdivisão. Uma categoria de objetos que inclui em sua definição apenas propriedades intrínsecas é então uma substância, ou substantivo de massa; uma classe que inclui quaisquer propriedades extrínsecas em sua definição é um substantivo contável. Stuff e Thing são as categorias mais gerais de substância e objeto, respectivamente.
 
-## 10.3 Eventos
+## 10.3. Eventos
 
 Na Seção 7.7.1, discutimos ações: coisas que acontecem, como Shoott; e fluentes: aspectos do mundo que mudam, como HaveArrowt. Ambas foram representadas como proposições, e usamos axiomas de estado sucessor para dizer que um fluente será verdadeiro no instante t \+ 1 se a ação no instante t o tornou verdadeiro, ou se já era verdadeiro no instante t e a ação não o tornou falso. Isso se aplica a um mundo em que as ações são discretas, instantâneas, acontecem uma de cada vez e não apresentam variação na forma como são executadas \(ou seja, existe apenas um tipo de Shootaction, não há distinção entre atirar rapidamente, lentamente, nervosamente, etc.\).
 
@@ -273,13 +282,17 @@ Para facilitar a leitura desses números, também introduzimos uma função Date
 
 Hora\(Início\(AD2001\)\)=Data\(0,0,0,1,Jan,2001\) Data\(0,20,21,24,1,1995\)=Segundos\(30000\).
 
-Dois intervalos se encontram se o tempo final do primeiro for igual ao tempo inicial do segundo. O conjunto completo de relações de intervalo \(Allen, 1983\) é mostrado abaixo e na Figura 10.2:
+Dois intervalos se encontram se o tempo final do primeiro for igual ao tempo inicial do segundo. O conjunto completo de relações de intervalo (Allen, 1983) é mostrado abaixo e na Figura 10.2:
 
-     Descrição 
+---
 
-As relações de intervalo são representadas usando um conjunto de dois blocos rotulados i e j. Encontro \(i, j\): Os blocos i e j se encontram em um ponto comum. Antes \(i, j\) depois \(j, i\): Os blocos i e j são alinhados horizontalmente em uma sequência, a uma pequena distância. Durante \(i, j\): Os blocos i e j são alinhados verticalmente com o bloco i no topo. O bloco j é maior que o bloco i. Sobreposição \(i, j\): Os blocos i e j são alinhados verticalmente de tal forma que o bloco i é alinhado à esquerda e o bloco j é alinhado ligeiramente à direita. O bloco j é maior que o bloco i. Início \(i, j\): Os blocos i e j são alinhados um abaixo do outro à esquerda. O bloco j é maior que o bloco i. Término \(i, j\): Os blocos i e j são alinhados um abaixo do outro à direita. O bloco j é maior que o bloco i. Igual a \(i, j\): Os blocos i e j são alinhados um abaixo do outro. Ambos os blocos têm o mesmo comprimento.
+<img src="https://raw.githubusercontent.com/nicolas-oliveira/roadmap-IA-paradigmas/refs/heads/main/week00-introduction/4%C2%AA%20Edi%C3%A7%C3%A3o%20-%20Introdu%C3%A7%C3%A3o%20%C3%A0%20Intelig%C3%AAncia%20Artificial%20Peter%20e%20Novrig/10%20Cap%C3%ADtulo/files/Figura-10-2.png" title="" alt="" data-align="center">
 
-Figura 10.2 Predicados em intervalos de tempo.
+> *Figura 10.2 Predicados em intervalos de tempo.*
+
+---
+
+As relações de intervalo são representadas usando um conjunto de dois blocos rotulados i e j. Encontro (i, j): Os blocos i e j se encontram em um ponto comum. Antes (i, j) depois (j, i): Os blocos i e j são alinhados horizontalmente em uma sequência, a uma pequena distância. Durante (i, j): Os blocos i e j são alinhados verticalmente com o bloco i no topo. O bloco j é maior que o bloco i. Sobreposição (i, j): Os blocos i e j são alinhados verticalmente de tal forma que o bloco i é alinhado à esquerda e o bloco j é alinhado ligeiramente à direita. O bloco j é maior que o bloco i. Início (i, j): Os blocos i e j são alinhados um abaixo do outro à esquerda. O bloco j é maior que o bloco i. Término (i, j): Os blocos i e j são alinhados um abaixo do outro à direita. O bloco j é maior que o bloco i. Igual a (i, j): Os blocos i e j são alinhados um abaixo do outro. Ambos os blocos têm o mesmo comprimento.
 
 Encontro\(i, j\) Antes\(i, j\) Depois\(j, i\) Durante\(i, j\) Sobreposição\(i, j\) Início\(i, j\) Término\(i, j\) É igual a\(i, j\) ⇔ ⇔ ⇔ ⇔ ⇔ ⇔ ⇔ ⇔ Fim\(i\)=Início\( j\) Fim\(i\) < Início\( j\) Antes\(i, j\) Início\(j\) < Início\(i\) < Fim\(i\) < Fim\(i\) < Início\(j\) < Fim\(i\) < Fim\(j\) Início\(i\) = Início\(j\) Fim\(i\) = Fim\(j\) Início\(i\)=Início\(j\)∧Fim\(i\)=Fim\(j\)
 
@@ -287,17 +300,21 @@ Todas elas têm seu significado intuitivo, com exceção de Overlap: tendemos a 
 
 Encontra\(ReinadoDe \(George VI\),ReinadoDe \(Elizabeth II\)\). Sobrepõe\(Anos Cinquenta,ReinadoDe \(Elvis\)\). Começa\(Anos Cinquenta\)=Começa\(1950 d.C.\). Termina\(Anos Cinquenta\)=Fim\(1959 d.C.\).
 
-## 10.3.2 Fluentes e objetos
+## 10.3.2. Fluentes e objetos
 
 Objetos físicos podem ser vistos como eventos generalizados, no sentido de que um objeto físico é um pedaço de espaço-tempo. Por exemplo, os EUA podem ser considerados um evento que começou em 1776 como uma união de 13 estados e continua em andamento hoje como uma união de 50. Podemos descrever as propriedades mutáveis dos EUA usando fluentes estaduais, como População \(EUA\). Uma propriedade dos EUA que muda a cada quatro ou oito anos, exceto por acidentes, é seu presidente. Pode-se propor que Presidente \(EUA\) seja um termo lógico que denota um objeto diferente em momentos diferentes.
 
 Infelizmente, isso não é possível, pois um termo denota exatamente um objeto em uma determinada estrutura de modelo. \(O termo Presidente\(EUA, t\) pode denotar objetos diferentes, dependendo do valor de t, mas nossa ontologia mantém os índices de tempo separados dos fluentes.\) A única possibilidade é que Presidente \(EUA\) denota um único objeto que consiste em pessoas diferentes em momentos diferentes. É o objeto que é George Washington de 1789 a 1797, John Adams de 1797 a 1801 e assim por diante, como na Figura 10.3. Para dizer que George Washington foi presidente ao longo de 1790, podemos escrever
 
-     Descrição 
-
 O Presidente \(EUA "A"\) denota um único objeto que consiste em diferentes pessoas em diferentes épocas. Este modelo é representado por três blocos dispostos diagonalmente, com o comprimento sendo representado pelos anos. O primeiro bloco é rotulado como Washington de 1789 a 1797, o segundo bloco é rotulado como Adams de 1797 a 1801, e o terceiro bloco é rotulado como Jefferson de 1801.
 
-Figura 10.3 Uma visão esquemática do objeto Presidente \(EUA\) para os primeiros anos
+---
+
+<img src="https://raw.githubusercontent.com/nicolas-oliveira/roadmap-IA-paradigmas/refs/heads/main/week00-introduction/4%C2%AA%20Edi%C3%A7%C3%A3o%20-%20Introdu%C3%A7%C3%A3o%20%C3%A0%20Intelig%C3%AAncia%20Artificial%20Peter%20e%20Novrig/10%20Cap%C3%ADtulo/files/Figura-10-3.png" title="" alt="" data-align="center">
+
+> *Figura 10.3 Uma visão esquemática do objeto Presidente \(EUA\) para os primeiros anos*
+
+---
 
 T\(É igual a\(Presidente\(EUA\);GeorgeWashington\),Início\(1790 d.C.\),Fim\(1790 d.C.\)\).
 
