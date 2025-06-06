@@ -10,8 +10,8 @@
 
 ### Fontes Principais
 
-- **"Symbolic Behaviour in Artificial Intelligence "** - McGregor et al. (2021) 
- [arXiv:2102.03406](https://arxiv.org/abs/2102.03406) 
+- **"Symbolic Behaviour in Artificial Intelligence "** - McGregor et al. (2021)
+ [arXiv:2102.03406](https://arxiv.org/abs/2102.03406){:target="_blank"}
  Este artigo examina os fundamentos do comportamento simbólico na IA, oferecendo uma visão geral conceitual dos sistemas de raciocínio simbólico.
 
 - **“Representação do Conhecimento”** - Capítulo 10 do livro "Inteligência Artificial: Uma abordagem moderna" 4 Edição por Russell & Norvig 
@@ -20,12 +20,10 @@
 ### Fontes Complementares
 
 - **"Neuro-Symbolic AI in 2024: A Systematic Review "** - Stammer et al. (2024) 
- [arXiv:2501.05435](https://arxiv.org/abs/2501.05435) 
+ [arXiv:2501.05435](https://arxiv.org/abs/2501.05435){:target="_blank"}
  Uma revisão abrangente que fornece contexto sobre como os sistemas simbólicos estão sendo integrados atualmente às arquiteturas neurais.
 
-- **"The History of Artificial Intelligence "** - Stanford Encyclopedia of Philosophy 
- Um contexto filosófico e histórico mais amplo para situar a IA simbólica no desenvolvimento do campo.  
-  [https://plato.stanford.edu/entries/artificial-intelligence/](https://plato.stanford.edu/entries/artificial-intelligence/)
+- **"[The History of Artificial Intelligence](https://plato.stanford.edu/entries/artificial-intelligence/){:target="_blank"}"** - Stanford Encyclopedia of Philosophy: Um contexto filosófico e histórico mais amplo para situar a IA simbólica no desenvolvimento do campo.
 
 ## Prática
 
