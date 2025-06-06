@@ -171,7 +171,7 @@ $$
 
 Esses axiomas são um exemplo de uma técnica geral chamada minimização lógica, que significa definir um objeto como o menor que satisfaz certas condições.
 
-## 10.2.2 Medições
+## 10.2.2. Medições
 
 Tanto nas teorias científicas quanto nas teorias de senso comum, os objetos têm altura, massa, custo e assim por diante. Os valores que atribuímos a essas propriedades são chamados de ***medidas***. 
 
@@ -245,29 +245,39 @@ A língua inglesa distingue claramente entre coisas e coisas. Dizemos "um porco-
 
 Para representar as coisas corretamente, começamos com o óbvio. Precisamos ter como objetos em nossa ontologia pelo menos os "pedaços" grosseiros de coisas com as quais interagimos. Por exemplo, podemos reconhecer um pedaço de manteiga como aquele deixado na mesa na noite anterior; podemos pegá-lo, pesá-lo, vendê-lo ou o que for. Nesses sentidos, é um objeto, assim como o porco-formigueiro. Vamos chamá-lo de Manteiga3. Também definimos a categoria Manteiga. Informalmente, seus elementos serão todas aquelas coisas das quais se poderia dizer "É manteiga", incluindo Manteiga3. Com algumas ressalvas sobre partes muito pequenas que omitiremos por enquanto, qualquer parte de um objeto-manteiga também é um objeto-manteiga:
 
-b∈Manteiga∧ParteDe\(p,b\)⇒p∈Manteiga.
+$$
+b ∈ Manteiga∧ParteDe(p,b) ⇒ p ∈ Manteiga.
+$$
 
 Agora podemos dizer que a manteiga derrete a cerca de 30 graus centígrados:
 
-b∈Manteiga⇒Ponto de Fusão \(b, Centígrados\(30\)\).
+$$
+b ∈ Manteiga ⇒ PontoDeFusão(b, Centígrados(30)).
+$$
 
-Poderíamos continuar dizendo que a manteiga é amarela, menos densa que a água, macia à temperatura ambiente, com alto teor de gordura e assim por diante. Por outro lado, a manteiga não tem tamanho, forma ou peso específicos. Podemos definir categorias mais especializadas de manteiga, como ManteigaSemSal, que também é um tipo de substância. Observe que a categoria LibraDeManteiga, que inclui como membros todos os objetos-manteiga que pesam uma libra, não é um tipo de substância. Se cortarmos uma libra de manteiga ao meio, infelizmente não obteremos duas libras de manteiga.
+Poderíamos continuar dizendo que a manteiga é amarela, menos densa que a água, macia à temperatura ambiente, com alto teor de gordura e assim por diante. Por outro lado, a manteiga não tem tamanho, forma ou peso específicos. Podemos definir categorias mais especializadas de manteiga, como `ManteigaSemSal`, que também é um tipo de substância. Observe que a categoria `PacoteDeManteiga`, que inclui como membros todos os objetos-manteiga que pesam uma 250 gramas, não é um tipo de *material*. Se cortarmos um pacote de manteiga ao meio, infelizmente não obteremos dois pacotes de 250 gramas de manteiga.
 
-O que realmente acontece é o seguinte: algumas propriedades são intrínsecas: pertencem à própria substância do objeto, e não ao objeto como um todo. Quando você corta uma instância de stuffing ao meio, os dois pedaços retêm as propriedades intrínsecas — coisas como densidade, ponto de ebulição, sabor, cor, propriedade e assim por diante. Por outro lado, suas propriedades extrínsecas — peso, comprimento, forma e assim por diante — não são mantidas sob subdivisão. Uma categoria de objetos que inclui em sua definição apenas propriedades intrínsecas é então uma substância, ou substantivo de massa; uma classe que inclui quaisquer propriedades extrínsecas em sua definição é um substantivo contável. Stuff e Thing são as categorias mais gerais de substância e objeto, respectivamente.
+O que realmente acontece é o seguinte: algumas propriedades são **intrínsecas**: pertencem à própria substância do objeto, e não ao objeto como um todo. Quando você corta uma instância de ***material*** ao meio, os dois pedaços retêm as mesmas propriedades intrínsecas — itens como densidade, ponto de ebulição, sabor, cor, propriedade e assim por diante. 
+
+Por outro lado, suas propriedades **extrínsecas** — peso, comprimento, forma e assim por diante — não são mantidas sob subdivisão. Uma categoria de objetos que inclui em sua definição apenas propriedades intrínsecas é então uma substância, ou substantivo de massa; uma classe que inclui quaisquer propriedades extrínsecas em sua definição é um substantivo contável. 
+
+O ***Material*** e a ***Coisa*** são as categorias mais genéricas de substância e objeto, respectivamente.
 
 ## 10.3. Eventos
 
-Na Seção 7.7.1, discutimos ações: coisas que acontecem, como Shoott; e fluentes: aspectos do mundo que mudam, como HaveArrowt. Ambas foram representadas como proposições, e usamos axiomas de estado sucessor para dizer que um fluente será verdadeiro no instante t \+ 1 se a ação no instante t o tornou verdadeiro, ou se já era verdadeiro no instante t e a ação não o tornou falso. Isso se aplica a um mundo em que as ações são discretas, instantâneas, acontecem uma de cada vez e não apresentam variação na forma como são executadas \(ou seja, existe apenas um tipo de Shootaction, não há distinção entre atirar rapidamente, lentamente, nervosamente, etc.\).
+Na Seção 7.7.1, discutimos ações: coisas que acontecem, como `Atirar`; e fluentes: aspectos do mundo que mudam, como `TemFlecha`. Ambas foram representadas como proposições, e usamos axiomas de estado sucessor para dizer que um fluente será verdadeiro no instante `t + 1` se a ação no instante `t` o tornou verdadeiro, ou se já era verdadeiro no instante `t` e a ação não o tornou falso. Isso se aplica a um mundo em que as ações são discretas, instantâneas, acontecem uma de cada vez e não apresentam variação na forma como são executadas \(ou seja, existe apenas um tipo de `Atirar`, não há distinção entre atirar rapidamente, lentamente, nervosamente, etc.\).
 
 Mas, à medida que passamos de domínios simplistas para o mundo real, há uma gama muito mais rica de ações ou eventos³ com os quais lidar. Considere uma ação contínua, como encher uma banheira. Um axioma do estado sucessor pode dizer que a banheira está vazia antes da ação e cheia quando a ação é realizada, mas não pode falar sobre o que acontece durante a ação. Também não consegue descrever facilmente duas ações ocorrendo ao mesmo tempo — como escovar os dentes enquanto se espera a banheira encher. Para lidar com esses casos, introduzimos uma abordagem conhecida como cálculo de eventos.
 
-Os objetos do cálculo de eventos são eventos, fluentes e pontos no tempo. At\(Shankar, Berkeley\) é um fluente: um objeto que se refere ao fato de Shankar estar em Berkeley. O evento E1 de Shankar voando de São Francisco para Washington, D.C., é descrito como
+Os objetos do cálculo de eventos são eventos, fluentes e pontos no tempo. `Em(Shankar, Berkeley)` é um fluente: um objeto que se refere ao fato de Shankar estar em Berkeley. O evento E₁ de Shankar voando de São Francisco para Washington, D.C., é descrito como
 
-E 1 ∈Voos ∧Flyer\( E 1 ,Shankar\)∧Origem\( E 1 ,SF\)∧Destino\( E 1 ,DC\) .
+$$
+E_1 ∈ Voos ∧ Piloto(E_1 ,Shankar) ∧ Origem(E_1 ,SF) ∧ Destino(E_1 ,DC)
+$$
 
-onde Flyings é a categoria de todos os eventos de voo. Ao reificar eventos, tornamos possível adicionar qualquer quantidade de informação arbitrária sobre eles. Por exemplo, podemos dizer que o voo de Shankar foi acidentado com Bumpy \(E1\). Em uma ontologia onde eventos são predicados n-ários, não haveria como adicionar informações extras como esta; mudar para um predicado n \+ 1-ário não é uma solução escalável.
+onde `Voos` é a categoria de todos os eventos de voo. Ao reificar eventos, tornamos possível adicionar qualquer quantidade de informação arbitrária sobre eles. Por exemplo, podemos dizer que o voo de Shankar foi acidentado com `Turbulento(E₁)`. Em uma ontologia onde eventos são predicados `n-ários`, não haveria como adicionar informações extras como esta; mudar para um predicado `n + 1-ário` não é uma solução escalável.
 
-Para afirmar que uma fluência é realmente verdadeira a partir de algum ponto no tempo t1 e continuando até o tempo t2, usamos o predicado T, como em T\(At\(Shankar,Berkeley\),t1,t2. Da mesma forma, usamos Happens\(E1,t1,t2\) para dizer que o evento E1 realmente aconteceu, começando no tempo t1 e terminando no tempo t2. O conjunto completo de predicados para uma versão do cálculo de eventos 4 é:
+Para afirmar que uma fluência é realmente verdadeira a partir de algum ponto no tempo t1 e continuando até o tempo `t2`, usamos o predicado `T`, como em `T(Em(Shankar,Berkeley),t1,t2`. Da mesma forma, usamos Happens\(E1,t1,t2\) para dizer que o evento E1 realmente aconteceu, começando no tempo t1 e terminando no tempo t2. O conjunto completo de predicados para uma versão do cálculo de eventos 4 é:
 
 T\(f, t 1, t 2\) Acontece\(e, t 1, t 2\) Inicia\(e, f, t\) Termina\(e, f, t\) Iniciado\(f, t 1, t 2\) Terminado\(f, t 1, t 2\) t 1 < t 2 F fluente é verdadeiro para todos os tempos entre t 1 e t 2 O evento e começa no tempo t 1 e termina em t 2 O evento e faz com que f fluente se torne verdadeiro no tempo t O evento e faz com que f fluente deixe de ser verdadeiro no tempo t F fluente se torna verdadeiro em algum ponto entre t 1 e t 2 F fluente deixa de ser verdadeiro em algum ponto entre t 1 e t 2 O ponto de tempo t 1 ocorre antes do tempo t 2
 
@@ -285,7 +295,7 @@ Terminado\(f, t 1 , t 5 \)⇔ ∃e, t 2 , t 3 , t 4 Acontece\(e, t 2 , t 4 \)∧
 
 Podemos estender o cálculo de eventos para representar eventos simultâneos \(como duas pessoas sendo necessárias para andar de gangorra\), eventos exógenos \(como o vento movendo um objeto\), eventos contínuos \(como a subida da maré\), eventos não determinísticos \(como lançar uma moeda e ela dar cara ou coroa\) e outras complicações.
 
-## 10.3.1Tempo
+## 10.3.1. Tempo
 
 O cálculo de eventos nos abre a possibilidade de falar sobre pontos e intervalos de tempo. Consideraremos dois tipos de intervalos de tempo: momentos e intervalos estendidos. A diferença é que apenas os momentos têm duração zero:
 
@@ -337,7 +347,7 @@ T\(É igual a\(Presidente\(EUA\);GeorgeWashington\),Início\(1790 d.C.\),Fim\(17
 
 Usamos o símbolo de função Equals em vez do predicado lógico padrão =, porque não podemos ter um predicado como argumento para T e porque a interpretação não é que GeorgeWashington e President\(USA\) são logicamente idênticos em 1790; identidade lógica não é algo que pode mudar ao longo do tempo. A identidade está entre os subeventos dos objetos President\(USA\) e GeorgeWashington que são definidos pelo período 1790.
 
-## 10.4 Objetos Mentais e Lógica Modal
+## 10.4. Objetos Mentais e Lógica Modal
 
 Os agentes que construímos até agora têm crenças e podem deduzir novas crenças. No entanto, nenhum deles tem qualquer conhecimento sobre crenças ou sobre dedução. O conhecimento sobre o próprio conhecimento e processos de raciocínio é útil para controlar a inferência. Por exemplo, suponha que Alice pergunte "qual é a raiz quadrada de 1764" e Bob responda "Eu não sei". Se Alice insistir "pense mais", Bob deve perceber que, com um pouco mais de reflexão, essa questão pode de fato ser respondida. Por outro lado, se a pergunta fosse "O presidente está sentado agora?", Bob deve perceber que pensar mais dificilmente ajudará. O conhecimento sobre o conhecimento de outros agentes também é importante; Bob deve perceber que o presidente sabe.
 
@@ -393,7 +403,7 @@ Podemos definir axiomas semelhantes para a crença \(frequentemente denotada por
 
 Houve tentativas de definir uma forma de racionalidade limitada para agentes — dizer que os agentes acreditam apenas naquelas afirmações que podem ser derivadas com a aplicação de não mais do que k etapas de raciocínio, ou não mais do que s segundos de computação. Essas tentativas foram geralmente insatisfatórias.
 
-## 10.4.1Outras lógicas modais
+## 10.4.1. Outras lógicas modais
 
 Muitas lógicas modais foram propostas, para diferentes modalidades além do conhecimento. Uma proposta é adicionar operadores modais para possibilidade e necessidade: é possivelmente verdade que um dos autores deste livro esteja sentado neste momento, e é necessariamente verdade que 2 \+ 2 = 4.
 
@@ -409,11 +419,11 @@ Como mencionado na Seção 8.1.2, alguns lógicos favorecem modalidades relacion
 
 Às vezes, há operadores adicionais que podem ser derivados destes. Adicionar esses operadores modais torna a lógica em si mais complexa \(e, portanto, dificulta a demonstração por um algoritmo de inferência lógica\). Mas os operadores também nos permitem apresentar certos fatos de forma mais sucinta \(o que torna a inferência lógica mais rápida\). A escolha de qual lógica usar é semelhante à escolha de qual linguagem de programação usar: escolha uma que seja apropriada para sua tarefa, que seja familiar a você e aos outros que compartilharão seu trabalho e que seja eficiente o suficiente para seus propósitos.
 
-## 10.5Sistemas de raciocínio para categorias
+## 10.5. Sistemas de raciocínio para categorias
 
 Categorias são os principais blocos de construção de esquemas de representação de conhecimento em larga escala. Esta seção descreve sistemas especialmente projetados para organizar e raciocinar com categorias. Existem duas famílias de sistemas intimamente relacionadas: redes semânticas fornecem recursos gráficos para visualizar uma base de conhecimento e algoritmos eficientes para inferir propriedades de um objeto com base em sua associação a uma categoria; e lógicas descritivas fornecem uma linguagem formal para construir e combinar definições de categorias e algoritmos eficientes para decidir relações de subconjuntos e superconjuntos entre categorias.
 
-## 10.5.1Redes semânticas
+## 10.5.1. Redes semânticas
 
 Em 1909, Charles S. Peirce propôs uma notação gráfica de nós e arestas, chamada de grafos existenciais, que ele chamou de "a lógica do futuro". Assim começou um longo debate entre os defensores da "lógica" e os defensores das "redes semânticas". Infelizmente, o debate obscureceu o fato de que as redes semânticas são uma forma de lógica. A notação que as redes semânticas fornecem para certos tipos de sentenças costuma ser mais conveniente, mas, se eliminarmos as questões da "interface humana", os conceitos subjacentes — objetos, relações, quantificação e assim por diante — são os mesmos.
 
@@ -429,23 +439,27 @@ Poderíamos também querer afirmar que as pessoas têm duas pernas, isto é,
 
 Como antes, precisamos ter cuidado para não afirmar que uma categoria tem pernas; o link de caixa única na Figura 10.4 é usado para afirmar propriedades de cada membro de uma categoria.
 
-     Descrição 
+---
 
-A rede de herança de baixo para cima é a seguinte. Duas setas rotuladas Membro de apontam de Maria e João para as categorias Pessoas do sexo feminino e Pessoas do sexo masculino, respectivamente. Uma seta rotulada Pernas aponta de João para 1, enquanto outra seta rotulada Irmã de aponta de Maria para João. Duas setas rotuladas Subconjunto de de cada categoria, Pessoas do sexo masculino e Pessoas do sexo feminino, apontam para a categoria rotulada Pessoas. Uma seta rotulada Tem Mãe de Pessoas aponta de volta para Pessoas do sexo feminino. Outra seta rotulada Pernas aponta de Pessoas para 2. Uma seta rotulada Subconjunto de aponta da categoria Pessoas para a categoria rotulada Mamíferos.
+<img src="https://raw.githubusercontent.com/nicolas-oliveira/roadmap-IA-paradigmas/refs/heads/main/week00-introduction/4%C2%AA%20Edi%C3%A7%C3%A3o%20-%20Introdu%C3%A7%C3%A3o%20%C3%A0%20Intelig%C3%AAncia%20Artificial%20Peter%20e%20Novrig/10%20Cap%C3%ADtulo/files/Figura-10-4.png" title="" alt="" data-align="center">
 
-Figura 10.4 Uma rede semântica com quatro objetos \(João, Maria, 1 e 2\) e quatro categorias. As relações são indicadas por links rotulados.
+> *Figura 10.4 Uma rede semântica com quatro objetos (João, Maria, 1 e 2) e quatro categorias. As relações são indicadas por links rotulados.*
+
+---
 
 A notação de rede semântica facilita a execução de raciocínios de herança do tipo apresentado na Seção 10.2. Por exemplo, por ser uma pessoa, Mary herda a propriedade de ter duas pernas. Assim, para descobrir quantas pernas Mary possui, o algoritmo de herança segue o elo MemberOf de Mary até a categoria à qual ela pertence e, em seguida, segue os elos SubsetOf na hierarquia até encontrar uma categoria para a qual exista um elo Legs em caixa — neste caso, a categoria Persons. A simplicidade e a eficiência desse mecanismo de inferência, em comparação com a demonstração de teoremas lógicos semidecidíveis, têm sido um dos principais atrativos das redes semânticas.
 
 A herança se torna complicada quando um objeto pode pertencer a mais de uma categoria ou quando uma categoria pode ser um subconjunto de mais de uma categoria; isso é chamado de herança múltipla. Nesses casos, o algoritmo de herança pode encontrar dois ou mais valores conflitantes respondendo à consulta. Por esse motivo, a herança múltipla é proibida em algumas linguagens de programação orientada a objetos \(POO\), como Java, que usam herança em uma hierarquia de classes. Geralmente, ela é permitida em redes semânticas, mas adiaremos a discussão sobre isso para a Seção 10.6.
 
-O leitor pode ter notado uma desvantagem óbvia da notação de rede semântica, em comparação com a lógica de primeira ordem: o fato de que as ligações entre bolhas representam apenas relações binárias. Por exemplo, a frase Fly \(Shankar, NewYork, NewDelhi, Yesterday\) não pode ser afirmada diretamente em uma rede semântica. No entanto, podemos obter o efeito de asserções n-árias reificando a própria proposição como um evento pertencente a uma categoria de eventos apropriada. A Figura 10.5 mostra a estrutura da rede semântica para este evento específico. Observe que a restrição a relações binárias força a criação de uma ontologia rica de conceitos reificados.
+O leitor pode ter notado uma desvantagem óbvia da notação de rede semântica, em comparação com a lógica de primeira ordem: o fato de que as ligações entre bolhas representam apenas relações binárias. Por exemplo, a frase Fly \(Shankar, NewYork, NewDelhi, Yesterday\) não pode ser afirmada diretamente em uma rede semântica. No entanto, podemos obter o efeito de asserções n-árias reificando a própria proposição como um evento pertencente a uma categoria de eventos apropriada. A Figura 10.5 mostra a estrutura da rede semântica para este evento específico. Observe que a restrição a relações binárias força a criação de uma ontologia rica de conceitos reificados 
 
-     Descrição 
+---
 
-Uma seta rotulada "Membro de" aponta da bolha "Voar" \(subscrito 17\) para a bolha "Voar" \(Eventos\). Uma seta rotulada "Agente" \(subscrito 17\) aponta para a bolha "Shankar". Uma seta rotulada "Origem" \(subscrito 17\) aponta da bolha "Voar" \(subscrito 17\) para a bolha "Nova York". Uma seta rotulada "Destino" \(subscrito 17\) aponta para a bolha "Nova Déli". Uma seta rotulada "Durante" \(subscrito 17\) aponta para a bolha "Ontem".
+![](https://raw.githubusercontent.com/nicolas-oliveira/roadmap-IA-paradigmas/refs/heads/main/week00-introduction/4%C2%AA%20Edi%C3%A7%C3%A3o%20-%20Introdu%C3%A7%C3%A3o%20%C3%A0%20Intelig%C3%AAncia%20Artificial%20Peter%20e%20Novrig/10%20Cap%C3%ADtulo/files/Figura-10-5.png)
 
-Figura 10.5Um fragmento de uma rede semântica mostrando a representação da afirmação lógica Fly\(Shankar, NewYork, NewDelhi, Yesterday\).
+> Figura 10.5. Um fragmento de uma rede semântica mostrando a representação da afirmação lógica Voo(Shankar, NewYork, NewDelhi, Yesterday).
+
+---
 
 A reificação de proposições torna possível representar cada sentença atômica fundamental e livre de funções da lógica de primeira ordem na notação de rede semântica. Certos tipos de sentenças universalmente quantificadas podem ser afirmadas usando ligações inversas e as setas com caixa simples e dupla aplicadas a categorias, mas isso ainda nos deixa muito aquém da lógica de primeira ordem completa. Negação, disjunção, símbolos de função aninhados e quantificação existencial estão todos ausentes. Agora é possível estender a notação para torná-la equivalente à lógica de primeira ordem — como nos grafos existenciais de Peirce — mas isso nega uma das principais vantagens das redes semânticas, que é a simplicidade e a transparência dos processos de inferência. Os projetistas podem construir uma rede grande e ainda ter uma boa ideia sobre quais consultas serão eficientes, porque \(a\) é fácil visualizar as etapas pelas quais o procedimento de inferência passará e \(b\) em alguns casos a linguagem de consulta é tão simples que consultas difíceis não podem ser propostas.
 
@@ -455,11 +469,13 @@ Um dos aspectos mais importantes das redes semânticas é sua capacidade de repr
 
 Podemos manter uma semântica estritamente lógica para a rede se dissermos que a afirmação Legs para Pessoas inclui uma exceção para John:
 
-∀x x∈Pessoas∧x≠João⇒Perna\(x,2\).
+$$
+∀x\ x∈Pessoas∧x≠João⇒Perna(x,2).
+$$
 
 Para uma rede fixa, isso é semanticamente adequado, mas será muito menos conciso do que a própria notação de rede se houver muitas exceções. Para uma rede que será atualizada com mais asserções, no entanto, essa abordagem falha — queremos dizer que quaisquer pessoas ainda desconhecidas com uma perna também são exceções. A Seção 10.6 aprofunda essa questão e o raciocínio padrão em geral.
 
-## 10.5.2 Lógicas de descrição
+## 10.5.2. Lógicas de descrição
 
 A sintaxe da lógica de primeira ordem foi projetada para facilitar a descrição de objetos. Lógicas descritivas são notações projetadas para facilitar a descrição de definições e propriedades de categorias. Os sistemas de lógica descritiva evoluíram a partir de redes semânticas em resposta à pressão para formalizar o significado das redes, mantendo a ênfase na estrutura taxonômica como princípio organizador.
 
@@ -467,7 +483,11 @@ As principais tarefas de inferência para lógicas descritivas são subsunção 
 
 A linguagem CLÁSSICA \(Borgida et al., 1989\) é uma lógica descritiva típica. A sintaxe das descrições CLÁSSICAS é mostrada na Figura 10.6.6. Por exemplo, para dizer que solteiros são homens adultos não casados, escreveríamos
 
-Figura 10.6 Sintaxe de descrições em um subconjunto da linguagem CLASSIC.
+---
+
+<img src="https://raw.githubusercontent.com/nicolas-oliveira/roadmap-IA-paradigmas/refs/heads/main/week00-introduction/4%C2%AA%20Edi%C3%A7%C3%A3o%20-%20Introdu%C3%A7%C3%A3o%20%C3%A0%20Intelig%C3%AAncia%20Artificial%20Peter%20e%20Novrig/10%20Cap%C3%ADtulo/files/Figura-10-6.png" title="" alt="" data-align="center">
+
+> *Figura 10.6 Sintaxe de descrições em um subconjunto da linguagem CLASSIC.*
 
 Solteiro = E \(Solteiro, Adulto, Masculino\).
 
@@ -545,31 +565,31 @@ Sistemas de manutenção da verdade também fornecem um mecanismo para gerar exp
 
 Os algoritmos exatos usados para implementar sistemas de manutenção da verdade são um pouco complicados e não os abordaremos aqui. A complexidade computacional do problema de manutenção da verdade é pelo menos tão grande quanto a da inferência proposicional — ou seja, NP-difícil. Portanto, não se deve esperar que a manutenção da verdade seja uma panaceia. Quando usado com cuidado, no entanto, um TMS pode proporcionar um aumento substancial na capacidade de um sistema lógico de lidar com ambientes e hipóteses complexos.
 
-## Resumo
+# Resumo
 
 Ao nos aprofundarmos nos detalhes de como se representa uma variedade de conhecimento, esperamos ter dado ao leitor uma noção de como as bases de conhecimento reais são construídas e uma noção das interessantes questões filosóficas que surgem. Os pontos principais são os seguintes:
 
-•A representação de conhecimento em larga escala requer uma ontologia de propósito geral para organizar e vincular os vários domínios específicos do conhecimento.
+- A representação de conhecimento em larga escala requer uma ontologia de propósito geral para organizar e vincular os vários domínios específicos do conhecimento.
 
-•Uma ontologia de propósito geral precisa cobrir uma ampla variedade de conhecimento e deve ser capaz, em princípio, de lidar com qualquer domínio.
+- Uma ontologia de propósito geral precisa cobrir uma ampla variedade de conhecimento e deve ser capaz, em princípio, de lidar com qualquer domínio.
 
-•Construir uma ontologia grande e de propósito geral é um desafio significativo que ainda não foi totalmente concretizado, embora as estruturas atuais pareçam ser bastante robustas.
+- Construir uma ontologia grande e de propósito geral é um desafio significativo que ainda não foi totalmente concretizado, embora as estruturas atuais pareçam ser bastante robustas.
 
-• Apresentamos uma ontologia superior baseada em categorias e no cálculo de eventos. Abordamos categorias, subcategorias, partes, objetos estruturados, medições, substâncias, eventos, tempo e espaço, mudança e crenças.
+- Apresentamos uma ontologia superior baseada em categorias e no cálculo de eventos. Abordamos categorias, subcategorias, partes, objetos estruturados, medições, substâncias, eventos, tempo e espaço, mudança e crenças.
 
-•Os tipos naturais não podem ser definidos completamente na lógica, mas propriedades dos tipos naturais podem ser representadas.
+- Os tipos naturais não podem ser definidos completamente na lógica, mas propriedades dos tipos naturais podem ser representadas.
 
-•Ações, eventos e tempo podem ser representados com o cálculo de eventos. Tais representações permitem que um agente construa sequências de ações e faça inferências lógicas sobre o que será verdade quando essas ações ocorrerem.
+- Ações, eventos e tempo podem ser representados com o cálculo de eventos. Tais representações permitem que um agente construa sequências de ações e faça inferências lógicas sobre o que será verdade quando essas ações ocorrerem.
 
-•Sistemas de representação com propósitos específicos, como redes semânticas e lógicas descritivas, foram concebidos para auxiliar na organização de uma hierarquia de categorias. A herança é uma forma importante de inferência, permitindo que as propriedades dos objetos sejam deduzidas a partir de sua participação em categorias.
+- Sistemas de representação com propósitos específicos, como redes semânticas e lógicas descritivas, foram concebidos para auxiliar na organização de uma hierarquia de categorias. A herança é uma forma importante de inferência, permitindo que as propriedades dos objetos sejam deduzidas a partir de sua participação em categorias.
 
-•A suposição de mundo fechado, conforme implementada em programas lógicos, fornece uma maneira simples de evitar a necessidade de especificar muitas informações negativas. É melhor interpretada como um padrão que pode ser substituído por informações adicionais.
+- A suposição de mundo fechado, conforme implementada em programas lógicos, fornece uma maneira simples de evitar a necessidade de especificar muitas informações negativas. É melhor interpretada como um padrão que pode ser substituído por informações adicionais.
 
-•Lógicas não monotônicas, como a circunscrição e a lógica padrão, visam capturar o raciocínio padrão em geral.
+- Lógicas não monotônicas, como a circunscrição e a lógica padrão, visam capturar o raciocínio padrão em geral.
 
-•Os sistemas de manutenção da verdade lidam com atualizações e revisões de conhecimento de forma eficiente.
+- Os sistemas de manutenção da verdade lidam com atualizações e revisões de conhecimento de forma eficiente.
 
-•É difícil construir grandes ontologias manualmente; extrair conhecimento do texto torna o trabalho mais fácil.
+- É difícil construir grandes ontologias manualmente; extrair conhecimento do texto torna o trabalho mais fácil.
 
 ## Notas Bibliográficas e Históricas
 
