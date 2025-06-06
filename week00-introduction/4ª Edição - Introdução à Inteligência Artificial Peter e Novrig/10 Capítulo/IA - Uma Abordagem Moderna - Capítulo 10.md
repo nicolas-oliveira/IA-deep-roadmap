@@ -18,7 +18,7 @@ Antes de considerar a ontologia mais detalhadamente, devemos fazer uma ressalva 
 
 ---
 
-![](/home/nicolas/.config/marktext/images/2025-06-06-17-12-22-image.png)
+![](https://raw.githubusercontent.com/nicolas-oliveira/roadmap-IA-paradigmas/refs/heads/main/week00-introduction/4%C2%AA%20Edi%C3%A7%C3%A3o%20-%20Introdu%C3%A7%C3%A3o%20%C3%A0%20Intelig%C3%AAncia%20Artificial%20Peter%20e%20Novrig/10%20Cap%C3%ADtulo/files/Figura-10-1.png)
 
 > *Figura 10.1 A ontologia superior do mundo, mostrando os tópicos a serem abordados posteriormente neste capítulo. Cada ligação indica que o conceito inferior é uma especialização do superior. Especializações não são necessariamente disjuntas — um ser humano é tanto um animal quanto um agente. Veremos na Seção 10.3.2 por que objetos físicos se enquadram em eventos generalizados.*
 
