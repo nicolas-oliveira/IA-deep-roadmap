@@ -130,10 +130,20 @@ $$
 Portanto, podemos concluir `ParteDe(Bucareste, Terra)`. Categorias de objetos compostos são frequentemente caracterizadas por relações estruturais entre partes. Por exemplo, um bípede é um objeto
 
 $$
-Bípede(a) ⇒ ∃\ l_1,l_2,\  b\  Perna(l_1) ∧ Perna(l_2) ∧ Corpo(b) ∧   \\ 
-ParteDe(l_1 ,a) ∧ ParteDe(l_2, a) ∧ ParteDe(b,a) ∧ \\ 
-Presa(l_1,b) ∧ Presa(l_2,b) ∧ \\ 
-l_1 ≠ l_2 ∧ [∀ l_3 Perna (l_3 )∧ ParteDe(l_3 ,a) ⇒ (l_3 = l_1 ∨ l_3 = l_2 )]. 
+Bípede(a) ⇒ ∃\ l_1,l_2,\  b\  Perna(l_1) ∧ Perna(l_2) ∧ Corpo(b)\ ∧
+
+$$
+
+$$
+ParteDe(l_1 ,a) ∧ ParteDe(l_2, a) ∧ ParteDe(b,a)\ ∧
+$$
+
+$$
+Presa(l_1,b) ∧ Presa(l_2,b)\ ∧ 
+$$
+
+$$
+l_1 ≠ l_2 ∧ [\ ∀\ l_3\ Perna (l_3) ∧ ParteDe(l_3,a) ⇒ (l_3 = l_1 ∨ l_3 = l_2 )]. 
 $$
 
 A notação corresponde para "exatamente dois" é um pouco estranha; somos forçados a dizer que existem duas pernas, que elas não são iguais e que, se alguém propõe uma terceira perna, ela deveria ser igual a uma das outras duas. Na Seção 10.5.2, descrevemos um formalismo chamado *lógica de descrições* que facilita a representação de restrições como "exatamente dois".
@@ -222,7 +232,6 @@ Dificuldade( e_1 ) > Dificuldade( e_2 )
 $$
 
 $$
-
 e_1 ∈Exercícios ∧ e_2 ∈ Exercícios ∧ Dificuldade( e_1 ) > Dificuldade( e_2 ) ⇒ \\
 ExpectedScore( e_1 ) < ExpectedScore( e_2 ).
 $$
