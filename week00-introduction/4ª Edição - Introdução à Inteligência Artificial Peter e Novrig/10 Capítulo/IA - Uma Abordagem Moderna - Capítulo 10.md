@@ -131,7 +131,6 @@ Portanto, podemos concluir `ParteDe(Bucareste, Terra)`. Categorias de objetos co
 
 $$
 Bípede(a) ⇒ ∃\ l_1,l_2,\  b\  Perna(l_1) ∧ Perna(l_2) ∧ Corpo(b)\ ∧
-
 $$
 
 $$
